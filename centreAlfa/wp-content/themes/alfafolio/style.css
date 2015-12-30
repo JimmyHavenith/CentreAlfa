@@ -1,0 +1,608 @@
+/*
+Theme Name: Alfa folio
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: Jimmy Havenith
+Author URI: https://www.jimmy-havenith.be/
+Description: Theme created by Jimmy Havenith for A.L.F.A.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: alfafolio
+*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  margin: 0 auto; }
+
+.menuUn {
+  background-color: #212121;
+  display: block;
+  width: 100%;
+  position: fixed; }
+
+.menu {
+  display: inline-block;
+  width: 70%;
+  height: 0px; }
+
+.recherche {
+  display: inline-block;
+  width: 20%;
+  padding: 15px; }
+
+.recherche input[type='submit'] {
+  height: 25px;
+  display: inline-block;
+  width: 10%;
+  height: 32px;
+  background-color: #204c24;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase; }
+
+.recherche input[type='text'] {
+  width: 85%;
+  height: 25px; }
+
+.menu ul {
+  margin-left: 100px;
+  text-align: center; }
+
+.menu ul li {
+  list-style-type: none;
+  float: left;
+  font-size: 0.9em;
+  position: relative;
+  margin-top: 5px; }
+
+.menu ul li a:hover {
+  background-color: #204c24; }
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+  padding: 12px; }
+.menu li ul{
+  display: none;
+  position: absolute;
+}
+.menu ul li ul{
+  display: none;
+  position: absolute;
+  list-style: outside none none;
+}
+.menu ul li:hover ul a, .menu ul li a:focus ul a{
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 100%;
+}
+.menu li:hover ul, .menu li a:focus ul{
+  background-color: #212121;
+  display: block;
+  left: -115px;
+  top: 31px;
+  width: 300%;
+  height: 150px;
+  text-align: left;
+}
+.menu ul li ul li{
+  margin-top: 15px;
+}
+.sousMenu {
+  display: none; }
+
+.sousMenu {
+  position: relative;
+  text-align: left;
+  top: 31px;
+  background-color: #204c24;
+  margin: 0px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px; }
+
+.sousMenu li {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white; }
+
+.menuDeux {
+  width: 100%;
+  padding-top: 50px; }
+
+.menuDeux:after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.menuDeux a {
+  display: inline-block;
+  width: 15%;
+  padding: 60px;
+  margin-left: 35px; }
+
+.menuDeux h1 {
+  display: inline-block;
+  width: 75%;
+  color: #204c24;
+  font-size: 2.8em;
+  height: 55px;
+  text-align: center;
+  vertical-align: text-bottom; }
+
+.banniere {
+  background-image: url("http://localhost/centreAlfa/wp-content/uploads/2015/12/alpha01.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  height: 212px; }
+
+.services {
+  width: 100%; }
+
+.services h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #204c24; }
+
+.services:after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.service{
+  display: block;
+  width: 100%; }
+
+.service a{
+  color: #212121;
+  text-decoration: none; }
+
+.logo{
+  float: left;
+  width: 46.84%;
+  padding: 25px; }
+
+.logo:hover{
+  background-color: #e9e9e9;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto; }
+
+.logo h3{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.3em; }
+
+.about {
+  width: 100%;
+  background-color: #204c24;
+  display: block; }
+
+.about:after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.about h2 {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 2.5em;
+  padding-top: 50px;
+  padding-bottom: 35px; }
+
+.about p {
+  width: 60%;
+  text-align: justify;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  color: white;
+  font-size: 1.4em; }
+
+.about a {
+  color: white; }
+
+.about a:hover {
+  text-decoration: none; }
+
+footer {
+  background-color: #212121;
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+.menuFooter, .alpha, .infos {
+  display: inline-block;
+  width: 33.15%;
+  margin: 0;
+  vertical-align: middle; }
+
+.menuFooter {
+  background-color: #212121;
+  padding-bottom: 35px;
+  padding-top: 35px; }
+
+.menuFooter li {
+  font-size: 1.1em;
+  list-style-type: none; }
+
+.menuFooter li a {
+  color: white;
+  text-decoration: none; }
+
+.menuFooter li a:hover {
+  text-decoration: underline; }
+
+.listes {
+  width: 65%;
+  margin: 0 auto; }
+
+.list1, .list2 {
+  float: left; }
+
+.alpha {
+  background-color: #212121; }
+
+.alpha_alpha {
+  width: 28.5%;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 55px; }
+
+.infos {
+  background-color: #212121;
+  padding-bottom: 35px;
+  padding-top: 35px; }
+
+.sponsors {
+  width: 100%;
+  display: block; }
+
+.sponsors p {
+  display: inline-block;
+  margin: 0 auto; }
+
+.sponsors_sponsors {
+  width: 34%;
+  margin: 0 auto;
+  display: block; }
+
+.coord {
+  width: 100%;
+  display: block; }
+
+.coord p {
+  text-align: center;
+  color: white; }
+
+.contactUs{
+    display: block;
+    width: 70%;
+    background-color: hsl(0, 0%, 96%);
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+.contactUs_contactUs, .join{
+    display: inline-block;
+    margin: 35px;
+  }
+.contactUs_contactUs{
+    vertical-align: top;
+  }
+.contactUs_contactUs h2{
+    font-size: 1.9em;
+  }
+
+.map{
+    float: left;
+    width: 45%;
+  }
+.adresses{
+    float: right;
+    width: 35%;
+    text-align: left;
+  }
+.adresses p{
+    color: #204c24;
+    width: 100%;
+  }
+
+.articles {
+  width: 100%;
+  display: block;
+  margin-bottom: 50px; }
+
+.error {
+    text-align: center;
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+  }
+
+.article {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 55px;
+  background-color: whitesmoke;
+  padding: 25px;
+  font-size: 1.2em; }
+
+.article a {
+  color: #204c24; }
+
+.article a:hover {
+  text-decoration: none; }
+
+.plan {
+  width: 80%;
+  display: block;
+  margin: 0 auto; }
+
+.plan ul {
+  width: 45%;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: top; }
+
+.plan .icon {
+  display: inline-block;
+  width: 50%; }
+
+.plan .icon_icon {
+  margin: 0 auto;
+  width: 50%; }
+
+.plan li {
+  list-style-type: square;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 5px; }
+
+.plan li a {
+  color: #212121;
+  text-decoration: none;
+  font-weight: bold; }
+
+.plan li a:hover {
+  color: #204c24;
+  text-decoration: underline; }
+
+.articles h2, .nosServices h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  background-color: #204c24;
+  color: white;
+  padding: 50px;
+  box-shadow: 0 5px 15px -5px black; }
+
+.articles .iconS{
+  display: block;
+  width: 16%;
+  margin: 0 auto;
+}
+
+.article h3, .plan h3 {
+  color: #204c24;
+  font-size: 1.5em; }
+
+.article h4 {
+  padding-top: 25px;
+  font-size: 1.3em;
+  color: #212121; }
+
+.article h5 {
+  padding-top: 15px;
+  font-size: 1em; }
+
+.nosServices {
+  width: 100%;
+  margin-bottom: 100px; }
+
+.nosServices_nosServices {
+  width: 49%;
+  display: inline-block; }
+
+.nosServices_nosServices .logo {
+  margin: 0 auto;
+  display: block;
+  margin-top: 75px; }
+
+.nosServices_nosServices h3 {
+  text-align: center; }
+
+.nosServices_nosServices a {
+  color: #212121;
+  text-decoration: none; }
+
+.nosServices_nosServices a:hover {
+  color: #204c24;
+  text-decoration: underline; }
+
+blockquote {
+  text-align: center;
+  color: #204c24;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 25px; }
+
+blockquote span {
+  color: #212121;
+  font-size: 1.3em;
+  font-family: 'Roboto'; }
+
+.cite, .citeListe {
+  margin: 0 auto;
+  width: 75%;
+  font-size: 1.2em; }
+
+.citeListe {
+  padding-top: 15px; }
+
+@media screen and (max-width: 1280px) {
+  .sponsors_sponsors {
+    width: 37%; }
+
+  .listes {
+    width: 76%; }
+
+  .map iframe {
+    width: 100%; }
+
+  .contactUs_contactUs {
+    width: 62%; } }
+@media screen and (max-width: 980px) {
+  .menuDeux h1 {
+    width: 70%;
+    font-size: 2em; }
+
+  .banniere {
+    background-size: auto auto; }
+
+  .menu {
+    width: 55%; }
+
+  .recherche input[type="text"] {
+    height: 25px;
+    width: 55%; }
+
+  .recherche {
+    width: 30%; }
+
+  .menuFooter, .alpha, .infos {
+    width: 33%; }
+
+  .sponsors_sponsors {
+    width: 52%; }
+
+  .listes {
+    width: 100%; }
+
+  .alpha_alpha {
+    width: 45%; }
+
+  .map {
+    display: block; }
+
+  .map iframe {
+    width: 250%; }
+
+  .contactUs_contactUs {
+    width: 62%; }
+
+  .join {
+    width: 33%; } }
+@media screen and (max-width: 980px) {
+  .menuMainUl {
+    margin-left: 0px; }
+
+  .recherche {
+    width: 40%; }
+
+  .recherche input[type="text"] {
+    width: 70%; }
+
+  .menuDeux a img {
+    width: 95%; }
+
+  .menuDeux h1 {
+    font-size: 1.5em;
+    width: 69%; }
+
+  .listes {
+    width: 122%; }
+
+  .sponsors_sponsors {
+    width: 60%; }
+
+  .alpha_alpha {
+    width: 55%; }
+
+  .explication p, .explicationI p {
+    font-size: 0.9em; }
+
+  .about p {
+    font-size: 1em; }
+
+  .logo {
+    width: 72%; } }
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 90%; } }
+@media screen and (max-width: 768px) {
+  .menuDeux h1 {
+    width: 64%; }
+
+  .listes {
+    width: 130%; }
+
+  .sponsors_sponsors {
+    width: 65%; } }
+@media screen and (max-width: 360px) {
+  .menu {
+    width: 90%;
+    padding-bottom: 25px; }
+
+  .menuMain {
+    float: none;
+    margin-top: 25px; }
+
+  .recherche input[type="text"] {
+    display: none; }
+
+  .recherche input[type="submit"] {
+    display: none; }
+
+  .menuDeux a img {
+    display: block;
+    width: 100%; }
+
+  .menuDeux a {
+    display: block;
+    margin-top: 200px;
+    padding: 60px;
+    width: 67%; }
+
+  .menuDeux h1 {
+    width: 105%; }
+
+  .banniere {
+    display: none; }
+
+  .explication p, .explicationI p {
+    display: none; }
+
+  .logo img {
+    width: 75%; }
+
+  .logoI img {
+    width: 75%; }
+
+  .about p {
+    width: 93%; }
+
+  .infos {
+    display: none; }
+
+  .join {
+    width: 70%; }
+
+  .adresses {
+    width: 95%; }
+
+  .map iframe {
+    width: 200%; } }
