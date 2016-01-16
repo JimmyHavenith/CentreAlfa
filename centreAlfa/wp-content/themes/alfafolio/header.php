@@ -21,10 +21,7 @@
             'theme_location:' => 'nav'
           )); ?>
         </div>
-        <div class="recherche">
-          <input type="text" name="search">
-          <input type="submit" value="ok">
-        </div>
+        <?php get_sidebar(); ?>
       </div>
       <div class="menuDeux">
         <a href="http://localhost/centreAlfa/">
