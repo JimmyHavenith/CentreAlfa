@@ -2,7 +2,7 @@
   <section class="page_recherche">
     <?php if ( have_posts() ) : ?>
     <h2 class="page_recherche-titre">
-      <?php echo $wp_query->found_posts; ?><?php _e( ' résultats trouvés pour', 'locale' ); ?> : <span class="page_recherche-mot">"<?php the_search_query(); ?>"</span>
+      <?php echo $wp_query->found_posts; ?><?php _e(' résultats trouvés pour'); ?> : <span class="page_recherche-mot">"<?php the_search_query(); ?>"</span>
     </h2>
     <?php while ( have_posts() ) : the_post(); ?>
       <ul>
@@ -22,10 +22,10 @@
       'prev_text'          => __( 'Page précédente', '' ),
       'next_text'          => __( 'Page suivante', '' ),
     ) ); ?>
-  <?php else : ?>
-    <h2 class="search-title">
-      <?php echo $wp_query->found_posts; ?> <?php _e( ' résultat trouvé pour', 'locale' ); ?> : "<?php the_search_query(); ?>"
-    </h2>
-  <?php endif; ?>
+    <?php else : ?>
+      <h2 class="search-title">
+        <?php echo $wp_query->found_posts; ?> <?php _e(' résultat trouvé pour'); ?> : "<?php the_search_query(); ?>"
+      </h2>
+    <?php endif; ?>
   </section>
 <?php get_footer(); ?>
