@@ -20,6 +20,7 @@ body {
   background-color: #212121;
   display: block;
   width: 100%;
+  margin-top: -62px;
   position: fixed; }
 
 .menu {
@@ -37,12 +38,16 @@ body {
   display: inline-block;
   width: 10%;
   height: 32px;
-  background-color: #204c24;
+  background-color: #428957;
   border: none;
   color: white;
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase; }
+
+.recherche input[type="submit"]:hover {
+  background-color: #204c24;
+}
 
 .recherche input[type='text'] {
   width: 85%;
@@ -60,15 +65,34 @@ body {
   margin-top: 5px; }
 
 .menu ul li a:hover {
-  background-color: #204c24; }
+  color: #428957;
+}
 
 .menu ul li a {
   color: white;
   text-decoration: none;
-  text-decoration: none;
   z-index: 1;
   position: relative;
-  padding: 12px; }
+  margin: 12px;
+  padding-bottom: 3px;
+}
+
+.menu ul li a:before{
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #428957;
+  width: 100%;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.15s ease-in-out 0s;
+}
+.menu ul li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 .menu li ul{
   display: none;
   position: absolute;
@@ -80,78 +104,86 @@ body {
 }
 .menu ul li:hover ul a, .menu ul li a:focus ul a{
   box-sizing: border-box;
-  padding: 5px 10px;
+  padding: 5px 0px;
   width: 100%;
 }
 .menu li:hover ul, .menu li a:focus ul{
   background-color: #212121;
   display: block;
   left: -115px;
-  top: 31px;
-  width: 300%;
-  height: 150px;
+  top: 22px;
+  width: 250%;
+  height: 123px;
   text-align: left;
 }
 .menu ul li ul li{
-  margin-top: 15px;
+  margin-top: 12px;
+  margin-left: -26px;
 }
-.sousMenu {
-  display: none; }
 
-.sousMenu {
-  position: relative;
-  text-align: left;
-  top: 31px;
-  background-color: #204c24;
-  margin: 0px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 10px; }
-
-.sousMenu li {
-  list-style-type: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: white; }
-
-.menuDeux {
-  width: 100%;
-  padding-top: 50px; }
-
-.menuDeux:after {
-  clear: both;
-  content: "";
-  display: block; }
-
-.menuDeux a {
-  display: inline-block;
-  width: 15%;
-  padding: 60px;
-  margin-left: 35px; }
-
-.menuDeux h1 {
-  display: inline-block;
-  width: 75%;
-  color: #204c24;
-  font-size: 2.8em;
-  height: 55px;
-  text-align: center;
-  vertical-align: text-bottom; }
-
-.banniere {
-  background-image: url("http://localhost/centreAlfa/wp-content/uploads/2015/12/alpha01.png");
+.banniere, .banniere_formation, .banniere_therapeutique, .banniere_parent, .banniere_risque, .banniere_about, .banniere_news, .banniere_search, .banniere_tarif, .banniere_self, .banniere_stage, .banniere_part, .banniere_liens, .banniere_faq, .banniere_equipe, .banniere_plan {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
-  height: 212px; }
+  height: 300px; }
+
+.banniere{
+  background-image: url("img/alfa21.png");
+}
+.banniere_formation{
+  background-image: url("img/alfa02.png");
+}
+.banniere_therapeutique{
+  background-image: url("img/alfa01.png");
+}
+.banniere_parent{
+  background-image: url("img/happy01.png");
+}
+.banniere_risque{
+  background-image: url("img/alfa06.png");
+}
+.banniere_about{
+  background-image: url("img/alfa07.png");
+}
+.banniere_news{
+  background-image: url("img/alfa18.png");
+}
+.banniere_search{
+  background-image: url("img/alfa17.png");
+}
+.banniere_tarif{
+  background-image: url("img/alfa12.png");
+}
+.banniere_self{
+  background-image: url("img/alfa15.png");
+}
+.banniere_stage{
+  background-image: url("img/alfa10.png");
+}
+.banniere_part{
+  background-image: url("img/alfa19.png");
+}
+.banniere_liens{
+  background-image: url("img/alfa03.png");
+}
+.banniere_faq{
+  background-image: url("img/alfa14.png");
+}
+.banniere_equipe{
+  background-image: url("img/alfa16.png");
+}
+.banniere_plan{
+  background-image: url("img/alfa13.png");
+}
 
 .services {
   width: 100%; }
 
 .services h2 {
   text-align: center;
-  font-size: 2.5em;
-  color: #204c24; }
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #212121; }
 
 .services:after {
   clear: both;
@@ -168,11 +200,13 @@ body {
 
 .logo{
   float: left;
-  width: 46.84%;
-  padding: 25px; }
+  width: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 .logo:hover, .test:focus .logo {
-  background-color: #e9e9e9;
+  background-color: #bfeccd;
 }
 
 .logo img {
@@ -186,7 +220,7 @@ body {
 
 .about {
   width: 100%;
-  background-color: #204c24;
+  background-color: #428957;
   display: block; }
 
 .about:after {
@@ -314,7 +348,7 @@ footer {
     text-align: left;
   }
 .adresses p{
-    color: #204c24;
+    color: #428957;
     width: 100%;
   }
 
@@ -325,23 +359,23 @@ footer {
 
 .error {
     text-align: center;
-    font-size: 2em;
-    color: red;
+    font-size: 1.5em;
+    color: #428957;
     font-weight: bold;
   }
 
 .article {
-  width: 80%;
+  width: 55%;
   display: block;
   margin: 0 auto;
   text-align: left;
   margin-top: 55px;
   background-color: whitesmoke;
   padding: 25px;
-  font-size: 1.2em; }
+  font-size: 1em; }
 
 .article a {
-  color: #204c24; }
+  color: #428957; }
 
 .article a:hover {
   text-decoration: none; }
@@ -377,26 +411,29 @@ footer {
   font-weight: bold; }
 
 .plan li a:hover {
-  color: #204c24;
+  color: #428957;
   text-decoration: underline; }
 
 .articles h2, .nosServices h2 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: -50px;
+  margin-top: 62px;
   text-transform: uppercase;
-  background-color: #204c24;
+  background-color: #428957;
   color: white;
-  padding: 50px;
+  padding: 25px;
   box-shadow: 0 5px 15px -5px black; }
 
 .articles .iconS{
   display: block;
   width: 16%;
   margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: -40px;
 }
 
 .article h3, .plan h3 {
-  color: #204c24;
+  color: #428957;
   font-size: 1.5em; }
 
 .article h4 {
@@ -429,12 +466,12 @@ footer {
   text-decoration: none; }
 
 .nosServices_nosServices a:hover {
-  color: #204c24;
+  color: #428957;
   text-decoration: underline; }
 
 blockquote {
   text-align: center;
-  color: #204c24;
+  color: #428957;
   font-size: 1.5em;
   font-weight: bold;
   font-style: italic;
@@ -465,7 +502,7 @@ blockquote span {
   text-align: center;
 }
 .page_recherche-mot{
-  color: #204c24;
+  color: #212121;
 }
 .page_recherche ul{
   margin-top: 65px;
@@ -476,7 +513,7 @@ blockquote span {
   border-bottom: 2px solid #23282d;
 }
 .page_recherche li a{
-  color: #204c24;
+  color: #428957;
   font-size: 1.1em;
   font-weight: bold;
 }
@@ -518,9 +555,6 @@ blockquote span {
 
   .contactUs_contactUs {
     width: 62%; }
-
-  .logo {
-    width: 46%}
 
   .menuDeux h1 {
     width: 72%}
@@ -569,9 +603,6 @@ blockquote span {
   .join {
     width: 33%; }
 
-  .logo {
-    width: 44.5%;
-  }
 }
 @media screen and (max-width: 980px) {
   .menu{
@@ -625,6 +656,9 @@ blockquote span {
     background: none;
     height: 0px;
   }
+
+  .logo {
+    min-width: 46.5%; }
 
   .listes {
     width: 130%; }

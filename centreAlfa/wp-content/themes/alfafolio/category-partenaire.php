@@ -1,7 +1,11 @@
 <?php get_header(); ?>
     <section>
       <div class="articles">
-        <h2>Partenariat - réseau</h2>
+        <h2>Partenaires - réseaux</h2>
+      </div>
+      <div class="banniere_part">
+      </div>
+      <div class="articles">
         <?php query_posts($query_string . '&orderby=date&order=DESC'); ?>
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
           <div class="article">

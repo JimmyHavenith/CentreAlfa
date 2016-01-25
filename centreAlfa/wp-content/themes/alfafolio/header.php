@@ -23,10 +23,4 @@
         </div>
         <?php get_sidebar(); ?>
       </div>
-      <div class="menuDeux">
-        <a href="http://localhost/centreAlfa/">
-          <img src="http://localhost/centreAlfa/wp-content/uploads/2015/12/logo.svg" alt="logo du centre alpha" width="190" height="169" />
-        </a>
-        <h1>Aide liégeoise aux alcooliques et à leur famille</h1>
-      </div>
     </header>

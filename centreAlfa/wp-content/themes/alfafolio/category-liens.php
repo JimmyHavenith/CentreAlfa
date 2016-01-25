@@ -2,6 +2,10 @@
     <section>
       <div class="articles">
         <h2>Divers liens</h2>
+      </div>
+      <div class="banniere_liens">
+      </div>
+      <div class="articles">
         <?php query_posts($query_string . '&orderby=date&order=ASC'); ?>
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
           <div class="article">

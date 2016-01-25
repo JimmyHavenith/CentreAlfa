@@ -1,7 +1,11 @@
 <?php get_header(); ?>
     <section>
       <div class="articles">
-        <h2>À propos du centre ALFA</h2>
+        <h2>A propos du centre ALFA</h2>
+      </div>
+      <div class="banniere_about">
+      </div>
+      <div class="articles">
         <?php query_posts($query_string . '&orderby=date&order=ASC'); ?>
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
           <div class="article">
