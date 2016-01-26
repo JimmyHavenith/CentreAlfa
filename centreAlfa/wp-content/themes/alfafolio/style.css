@@ -111,7 +111,7 @@ body {
   background-color: #212121;
   display: block;
   left: -115px;
-  top: 22px;
+  top: 18px;
   width: 250%;
   height: 123px;
   text-align: left;
@@ -365,7 +365,7 @@ footer {
   }
 
 .article {
-  width: 55%;
+  width: 60%;
   display: block;
   margin: 0 auto;
   text-align: left;
@@ -558,26 +558,21 @@ blockquote span {
 
   .menuDeux h1 {
     width: 72%}
+
+  .article {
+    margin: 20px auto 0;
+    width: 75%;
+  }
 }
+
 @media screen and (max-width: 980px) {
   .menuDeux h1 {
     width: 70%;
     font-size: 2em; }
 
-  .banniere {
-    background-size: auto auto;
-    height: 99px;
-  }
-
-  .menu {
-    width: 55%; }
-
   .recherche input[type="text"] {
     height: 25px;
-    width: 55%; }
-
-  .recherche {
-    width: 30%; }
+    width: 70%; }
 
   .menuFooter, .alpha, .infos {
     width: 33%; }
@@ -603,8 +598,6 @@ blockquote span {
   .join {
     width: 33%; }
 
-}
-@media screen and (max-width: 980px) {
   .menu{
     width: 63%;
   }
@@ -614,21 +607,11 @@ blockquote span {
   .recherche {
     width: 30%; }
 
-  .recherche input[type="text"] {
-    width: 70%; }
-
   .menuDeux a img {
     width: 95%; }
 
-  .menuDeux h1 {
-    font-size: 1.5em;
-    width: 60%; }
-
   .listes {
     width: 122%; }
-
-  .sponsors_sponsors {
-    width: 60%; }
 
   .alpha_alpha {
     width: 55%; }
@@ -638,6 +621,20 @@ blockquote span {
 
   .about p {
     font-size: 1em; }
+
+  .banniere, .banniere_formation, .banniere_therapeutique, .banniere_parent, .banniere_risque, .banniere_about, .banniere_news, .banniere_search, .banniere_tarif, .banniere_self, .banniere_stage, .banniere_part, .banniere_liens, .banniere_faq, .banniere_equipe, .banniere_plan {
+    height: 151px;
+  }
+  .article {
+    width: 90%;
+    margin: 13px auto 0;
+  }
+  .articles .iconS {
+    width: 25%;
+  }
+  .logo{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 800px) {
   .logo {
@@ -647,16 +644,44 @@ blockquote span {
     margin-left: 0px;
     width: 100%;
   }
+  .menu li:hover ul, .menu li a:focus ul{
+    background-color: #212121;
+    display: block;
+    left: -14px;
+    top: 18px;
+    width: 250%;
+    height: 123px;
+    text-align: left;
+  }
+  .banniere, .banniere_formation, .banniere_therapeutique, .banniere_parent, .banniere_risque, .banniere_about, .banniere_news, .banniere_search, .banniere_tarif, .banniere_self, .banniere_stage, .banniere_part, .banniere_liens, .banniere_faq, .banniere_equipe, .banniere_plan {
+    display: none;
+  }
+  .article {
+    width: 90%;
+    margin: -60px auto 0;
+  }
+  .articles .iconS {
+    display: block;
+    margin: 25px auto -40px;
+    width: 30%;
+  }
+  .articles {
+    display: block;
+    margin-bottom: 90px;
+    width: 100%;
+  }
+  .sponsors_sponsors {
+      width: 60%;
+  }
 }
 @media screen and (max-width: 768px) {
   .menuDeux h1 {
     width: 64%; }
 
-  .banniere{
+  .banniere, .banniere_formation, .banniere_therapeutique, .banniere_parent, .banniere_risque, .banniere_about, .banniere_news, .banniere_search, .banniere_tarif, .banniere_self, .banniere_stage, .banniere_part, .banniere_liens, .banniere_faq, .banniere_equipe, .banniere_plan {
     background: none;
     height: 0px;
   }
-
   .logo {
     min-width: 46.5%; }
 
@@ -668,13 +693,20 @@ blockquote span {
   .articles .iconS{
       width: 33%;
     }
+  .articles h2, .nosServices h2 {
+    margin-bottom: -15px;
+  }
+  .article {
+    width: 90%;
+    margin: -60px auto 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .menuDeux h1{
     width: 50%;
     margin-bottom: 55px;
   }
-  .banniere{
+  .banniere, .banniere_formation, .banniere_therapeutique, .banniere_parent, .banniere_risque, .banniere_about, .banniere_news, .banniere_search, .banniere_tarif, .banniere_self, .banniere_stage, .banniere_part, .banniere_liens, .banniere_faq, .banniere_equipe, .banniere_plan {
     display: none;
   }
   .about p{
@@ -683,6 +715,10 @@ blockquote span {
   .articles .iconS{
     width: 40%;
   }
+  .article {
+    width: 90%;
+    margin: -60px auto 0;
+  }
 }
 @media screen and (max-width: 500px) {
   .recherche, .menu ul{
@@ -690,6 +726,16 @@ blockquote span {
   }
   .articles .iconS{
     width: 48%;
+  }
+  .article {
+    width: 90%;
+    margin: -60px auto 0;
+  }
+  .menuUn {
+    margin-top: -98px;
+  }
+  .articles h2, .nosServices h2 {
+    margin-top: 98px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -706,9 +752,6 @@ blockquote span {
   .about h2{
     font-size: 1.7em;
   }
-  .logo{
-    width: 87%;
-  }
   .articles .iconS{
     width: 60%;
   }
@@ -716,8 +759,11 @@ blockquote span {
 @media screen and (max-width: 360px) {
   .menu {
     width: 90%;
-    padding-bottom: 25px; }
-
+    padding-bottom: 5px;
+  }
+  .menu ul li a {
+    margin-left: 4px;
+  }
   .menuMain {
     float: none;
     margin-top: 25px; }
@@ -725,17 +771,10 @@ blockquote span {
   .recherche{
     width: 109%;
   }
-
-  .menu ul li a{
-    font-size: 0.9em;
-    margin-left: -5px;
-  }
-
   .menuDeux a img {
     display: block;
     width: 70%;
   }
-
   .menuDeux a {
     display: block;
     margin-top: 0px;
@@ -751,12 +790,6 @@ blockquote span {
 
   .explication p, .explicationI p {
     display: none; }
-
-  .logo img {
-    width: 75%; }
-
-  .logoI img {
-    width: 75%; }
 
   .about p {
     width: 93%; }
@@ -776,10 +809,14 @@ blockquote span {
   .articles .iconS{
     width: 70%;
   }
+  .article {
+    width: 90%;
+    margin: -60px auto 0;
+  }
 }
 @media screen and (max-width: 320px) {
   .menu ul li a{
-    margin-left: -10px;
+    margin-left: -1px;
   }
   .about h2{
     font-size: 1.5em;
@@ -791,5 +828,8 @@ blockquote span {
   }
   .articles .iconS{
     width: 80%;
+  }
+  .articles h2, .nosServices h2 {
+    margin-bottom: -65px;
   }
 }
